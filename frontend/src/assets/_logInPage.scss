@@ -1,0 +1,55 @@
+@import 'colors';
+
+.log-in-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sign-in {
+        border: 2px dashed $border;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        gap: 2rem; 
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 500px;
+        background-color: $background-darker;
+
+        .input {
+            border-radius: 10px;
+            border: 2px solid $border;
+            padding-left: 10px;
+            height: 30px;
+            width: 300px;
+        }
+        
+        .log-in-container, .create-user-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem; 
+            border-radius: 10px;
+            padding: 10px;
+
+            .btn {
+                width: 300px;
+                height: 32px;
+            }
+
+            .new-user {
+                cursor: pointer;
+                color: #575757; 
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .create-user-container {
+            padding-bottom: 2rem; 
+        }
+    }
+}
+    

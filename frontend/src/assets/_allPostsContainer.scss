@@ -1,0 +1,70 @@
+@import 'colors';
+
+.all-posts-container {
+    background-color: $background;
+    grid-column: 2 / span 11;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    display: flex; 
+    justify-content: space-evenly;
+
+    .print-all-posts {
+        background-color: white;
+        border: 2px solid $border; 
+        border-radius: 10px;
+        padding: 10px; 
+        width: 70vw;    
+
+        .post-div {
+            grid-column: 2 / span 11;
+            list-style: none;
+            border-bottom: 2px dashed $border;
+            padding-top: 2px;
+            padding-bottom: 2px; 
+            min-height: 50px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            align-items: center; 
+            cursor: pointer;
+            width: 88%;
+
+            .text {
+                grid-column: 1 / span 6;
+                font-size: x-large;
+                font-weight: 600;
+            }
+
+            p {
+                grid-column: 1 / span 6;
+            }
+
+            &:hover {
+                background-color: $grey;
+                border-radius: 10px;
+            }          
+            .date-container {
+                font-style: italic;
+                grid-column: 7 / span 2;
+                font-size: smaller;
+                text-align: end;
+                color: grey;
+                padding-right: 10px;
+            }  
+        }
+        .edit-btn-container {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $grey;
+                border-radius: 10px;
+            }   
+            .edit-post-btn {
+                margin-left: 1rem; 
+            }
+        }
+    }
+}
+
+

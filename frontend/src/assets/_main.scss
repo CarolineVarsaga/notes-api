@@ -1,0 +1,57 @@
+@import 'colors';
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $background;
+
+    header {
+        height: 120px;
+       // background-color: #c4bfab; 
+        background-color: $background-darker; 
+        border-bottom: 2px dashed $border;
+       // border-bottom: 2px solid #c4bfab; 
+        position: fixed;
+        top: 0; 
+        right: 0; 
+        left: 0;  
+        display: flex;
+        justify-content: space-between;
+        padding-right: 150px; 
+        padding-left: 200px;
+
+        h1 {
+            align-self: center;
+            font-family: "Patrick Hand";
+        }
+
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; 
+
+            p {
+                padding-right: 20px;
+            }
+          
+            .material-symbols-outlined {
+                font-size: xx-large;
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+
+            p {
+                margin: 0; 
+            }
+        }
+    }
+    
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr)); 
+        margin: 0;
+    }
+}

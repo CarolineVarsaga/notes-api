@@ -1,0 +1,117 @@
+@import 'colors';
+
+.home-container {
+    background-color: $background;
+    grid-column: 2 / span 11;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .home-page {
+        width: 70vw;
+        min-height: 540px;
+        background-color: white;
+        border: 2px solid $border; 
+        border-radius: 10px; 
+        padding-right: 10px;
+        padding-left: 10px; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px; 
+
+        .welcome-container {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+
+            h2 {
+                margin-top: 0; 
+                margin-bottom: 0; 
+                font-size: xx-large;
+            }
+    
+            h3 {
+                width: 350px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 2px dashed $border; 
+                border-top: 2px dashed $border; 
+                font-size: x-large;
+            }         
+    
+            button {
+                width: 290px;
+                height: 35px;
+            }
+        }
+       
+        .right-container {
+            border-left: 2px dashed $border; 
+            width: 60%; 
+            max-height: 100%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            padding-left: 10px;
+            
+            h2 {
+                margin: 0; 
+                font-size: xx-large;
+            }
+
+            .card-container {           
+                display: flex;
+                justify-content: row-reverse;
+                gap: 10px; 
+                align-items: center;
+                
+                .card {
+                    border: 2px solid $border; 
+                    border-radius: 10px;
+                    height: 250px;
+                    width: 200px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    box-shadow: 5px 2px 4px rgb(223, 166, 133);
+                    justify-content: space-between;
+                    
+                    &:hover {
+                        background-color: #ffc06d;
+                    }
+
+                    & > div { 
+                        height: 100px;                    
+                        overflow: hidden;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    & > p:last-child {
+                        color: grey; 
+                    }
+                }
+                .card:nth-child(1) {
+                    order: 3;
+                }
+                
+                .card:nth-child(2) {
+                    order: 2; 
+                }
+                
+                .card:nth-child(3) {
+                    order: 1; 
+                }
+            }
+        }    
+    }
+}

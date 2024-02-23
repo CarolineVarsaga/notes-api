@@ -1,0 +1,6 @@
+
+.logged-in-pages {
+    display: grid;
+    grid-column: 1 / span 12; 
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
