@@ -1,6 +1,6 @@
 # Assignment - Notes
 _Course: API development_
-> Visit my project: https://github.com/plugga-tech/notes-CarolineVarsaga
+> Visit my project: https://github.com/CarolineVarsaga/notes-api
 
 ## WHAT I USED
 ### Back end: 
@@ -15,6 +15,7 @@ _Course: API development_
 ### Front end:
 - Tinymce
 - Normalize
+- Live server
 
 ## SCREENSHOTS
 ### Log in page
@@ -62,6 +63,8 @@ It has been very educational to work with databases.
 
 ### _Process_
 Every time you click and navigate to a new page, it is rendered through JavaScript. I have almost no static HTML at all. 
+<br>
+The user password is encrypted, so you won't be able to see the real one in the database. 
 
 I have 8 endpoints in this project. 
 Users got 3 and posts got 5. 
